@@ -31,7 +31,7 @@ public class BreakAndSortString {
 		String[] arr=new String[list.size()];	//declaring a String array of size of the arrayList
 	
 		for (int i = 0; i < list.size(); i++) {
-         arr[i] = list.get(i);		//storing the words in the String array
+        	 arr[i] = list.get(i);		//storing the words in the String array
 		}
 		return arr;
 	} 
