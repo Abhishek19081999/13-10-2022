@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class BreakAndSortString {
 	
 
-	
+	//method for sorting words length wise
 	public static String sortStatement(String s[],int n) {
 		 for (int i=1 ;i<n; i++)
 		    {
