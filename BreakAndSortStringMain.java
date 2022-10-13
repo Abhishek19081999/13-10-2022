@@ -24,33 +24,33 @@ public class BreakAndSortStringMain {
 			
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.println("Enter a String: ");
+		System.out.println("Enter a String: "); //taking statement input from user 
 		String str=sc.nextLine()+" ";
 		
-		List<String> list = new ArrayList<String>(); 
+		List<String> list = new ArrayList<String>();  // declaring an arrayList with String as a generic 
 		 
-		char[] charArray = str.toCharArray(); 
+		char[] charArray = str.toCharArray(); //converting statement taken from user to char array
 		
-		String strTemp = ""; 
+		String strTemp = ""; //empty String variable
  
 		
-		for (int i = 0; i < charArray.length; i++) { 
+		for (int i = 0; i < charArray.length; i++) {  //traversing charArray and adding the words in the declared arrayList
 			
 			if (charArray[i] != ' ') { 
-				strTemp = strTemp + charArray[i]; 
+				strTemp = strTemp + charArray[i]; //storing the words in the temporary Stringvariable
 			} 
 			
 			else { 
-				list.add(strTemp); 
-				strTemp = ""; 
+				list.add(strTemp); //adding the words to the list
+				strTemp = ""; //making the temporary variable empty
 			} 
 		} 
  
 		
-		String[] arr=new String[list.size()];
+		String[] arr=new String[list.size()]; //declaring a String array of size of the arrayList
 	
 		for (int i = 0; i < list.size(); i++) {
-         arr[i] = list.get(i);
+         arr[i] = list.get(i);		//storing the words in the STring array
 		}
         
 		
@@ -60,11 +60,12 @@ public class BreakAndSortStringMain {
 		 
 		
 		
-		int n=arr.length;
+		int n=arr.length; 	//length of String array
 		
 		System.out.println("length: "+n);
 		System.out.println("***********************");
 		
+		//Sorting and printing the statement given by user by using the method 
 		System.out.println(BreakAndSortString.sortStatement(arr, n));
 	
 		
