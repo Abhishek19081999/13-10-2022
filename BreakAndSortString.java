@@ -23,7 +23,7 @@ public class BreakAndSortString {
 		
 		
 		for(int i=0;i<n;i++) {
-			text=text+" "+s[i];
+			text=text+"\n"+s[i];
 		}
 		  
 	  return text;
